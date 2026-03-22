@@ -44,6 +44,9 @@ public class TransactionService {
         userRepository.save(receiver);
 
         Transaction tx = new Transaction();
+        tx.setSenderId(senderId);
+        tx.setReceiverId(receiverId);
+        tx.setAmount(amount);
         tx.setStatus("SUCCESS");
         tx.setTime(LocalDateTime.now());
 

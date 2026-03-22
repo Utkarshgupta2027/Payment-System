@@ -31,4 +31,8 @@ export const getHistory = (userId) => api.get(`/transaction/history/${userId}`);
 
 export const retryTransaction = (id) => api.post(`/transaction/retry/${id}`);
 
+// ── QR Code ───────────────────────────────────────────
+export const getQrCodeUrl = (userId) => `${BASE_URL}/qr/generate/${userId}`;
+export const getQrInfo    = (userId) => api.get(`/qr/info/${userId}`);
+
 export default api;

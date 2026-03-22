@@ -10,6 +10,8 @@ import DashboardPage          from './pages/DashboardPage';
 import SendMoneyPage          from './pages/SendMoneyPage';
 import AddMoneyPage           from './pages/AddMoneyPage';
 import TransactionHistoryPage from './pages/TransactionHistoryPage';
+import QrCodePage            from './pages/QrCodePage';
+import ScannerPage           from './pages/ScannerPage';
 
 export default function App() {
   return (
@@ -32,6 +34,8 @@ export default function App() {
             <Route path="/send"      element={<SendMoneyPage />} />
             <Route path="/add-money" element={<AddMoneyPage />} />
             <Route path="/history"   element={<TransactionHistoryPage />} />
+            <Route path="/qr-code"   element={<QrCodePage />} />
+            <Route path="/scanner"   element={<ScannerPage />} />
           </Route>
 
           {/* Fallback */}

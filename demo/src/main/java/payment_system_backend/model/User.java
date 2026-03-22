@@ -17,6 +17,9 @@ public class User {
 
     private double balance;
 
+    @Column(name = "account_age_days", columnDefinition = "INT DEFAULT 0")
+    private int accountAgeDays = 0;
+
     // GETTERS
 
     public Long getId() {
@@ -39,6 +42,10 @@ public class User {
         return balance;
     }
 
+    public int getAccountAgeDays() {
+        return accountAgeDays;
+    }
+
     // SETTERS
 
     public void setId(Long id) {
@@ -59,5 +66,9 @@ public class User {
 
     public void setBalance(double balance) {
         this.balance = balance;
+    }
+
+    public void setAccountAgeDays(int accountAgeDays) {
+        this.accountAgeDays = accountAgeDays;
     }
 }

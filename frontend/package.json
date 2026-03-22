@@ -17,6 +17,7 @@
     "vite": "^8.0.0"
   },
   "dependencies": {
+    "@zxing/library": "^0.21.3",
     "axios": "^1.13.6",
     "react-router-dom": "^7.13.1"
   }
