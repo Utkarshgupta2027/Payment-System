@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://payment-system-5g9p.vercel.app';
+const BASE_URL = 'http://localhost:8080';
 
 const api = axios.create({
   baseURL: BASE_URL,
